@@ -1,6 +1,13 @@
 # Physics Lab Report
 
-用 Codex 根据原始实验数据和现成 Word 表格，完成大学物理实验的英文 postlab report。
+> [!IMPORTANT]
+> **本项目仅供娱乐、学习与技术交流，请勿将生成的报告直接作为课程作业或实验报告提交。**
+>
+> 本项目用于学习实验报告的结构、数据处理、公式排版及 AI 辅助文档制作，不替代真实实验、独立思考或个人写作。请遵守所在学校、课程及任课教师关于 AI 使用和学术诚信的要求，不得将 AI 生成内容冒充本人独立完成的成果。
+>
+> 生成内容可能存在计算、物理解释或格式错误，仅可作为学习参考，不保证符合课程要求或评分标准。项目作者不鼓励或支持抄袭、伪造实验数据及其他违反课程规定的使用方式。
+
+用 Codex 根据原始实验数据和现成 Word 表格，生成用于学习参考的大学物理实验英文 postlab report 草稿。
 
 本项目包含报告 skill、参考教材、写作要求和带水印的长短报告模板。使用同一课程材料时，每次实验只需加入 **手写原始数据** 和 **对应的 Word 数据表格**，然后告诉 Codex 实验名称及报告类型。
 
@@ -34,23 +41,23 @@ lab/lab1/
 
 ```text
 使用 $physics-lab-report，根据 lab/lab1 的原始数据和 Word 表格，
-完成 Measuring Laser Wavelength and Index of Refraction of Air
-by Michelson Interferometer 的 long postlab report。
+生成 Measuring Laser Wavelength and Index of Refraction of Air
+by Michelson Interferometer 的 long postlab report 学习草稿，不用于直接提交。
 ```
 
 短报告把 `long` 换成 `short`。姓名、学号、教师、实验日期如果未包含在材料中，可在同一条消息里提供；不确定的信息不会自动猜测。
 
 Codex 支持从项目的 `.agents/skills/` 读取技能，见 [OpenAI 官方技能说明](https://learn.chatgpt.com/docs/build-skills)。如果当前界面没有识别 `$physics-lab-report`，可以明确要求：“读取并使用 `.agents/skills/physics-lab-report/SKILL.md` 完成本次报告。”
 
-### 4. 获取报告
+### 4. 获取学习草稿
 
-最终 Word 文档保存在本次 `labX` 文件夹中，默认命名为：
+生成的 Word 草稿保存在本次 `labX` 文件夹中，默认命名为：
 
 ```text
 姓名+学号+实验名称+postlab.docx
 ```
 
-原始教材、模板、记录照片和表格保持不变。默认交付 DOCX；需要 PDF 时可在指令中提出。提交前请核对自己的原始读数和实验信息。
+原始教材、模板、记录照片和表格保持不变。默认交付 DOCX；需要 PDF 时可在指令中提出。请自行核对原始读数、计算和实验信息，将生成内容用于理解与练习，**请勿直接提交生成的文档**。
 
 ## 项目结构
 
