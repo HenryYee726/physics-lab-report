@@ -1,0 +1,24 @@
+# Private experiment inputs and outputs stay local.
+/lab/*
+!/lab/README.md
+!/lab/lab1/
+/lab/lab1/*
+!/lab/lab1/.gitkeep
+
+# Working files, local dependencies, and editor locks.
+/tmp/
+/output/
+/node_modules/
+/.venv/
+__pycache__/
+*.pyc
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local credentials and machine configuration.
+.env
+.env.*
+/.codex/
+/github-auth/
